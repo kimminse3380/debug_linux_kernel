@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "configure build output path"
+echo "configure build output path" 
 
 KERNEL_TOP_PATH="$(cd "$(dirname "$0")" ; pwd -P )"
 OUTPUT="$KERNEL_TOP_PATH/out"
