@@ -19,4 +19,4 @@ echo "make defconfig"
 make O=$OUTPUT bcm2709_defconfig
 
 echo "kernel build"
-make O=$OUTPUT zImage modules dtbs -j4 2>&1 | tee $BUILD_LOG
+make $PREPROCESS_FILE O=$OUTPUT zImage modules dtbs -j4 2>&1 | tee $BUILD_LOG
